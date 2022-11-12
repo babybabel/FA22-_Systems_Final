@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47105992}
   - component: {fileID: 47105993}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 47828353}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113206751}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 312707676}
   - component: {fileID: 312707678}
   - component: {fileID: 312707677}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 428323189}
   - component: {fileID: 428323191}
   - component: {fileID: 428323190}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: RawImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 500867927}
   - component: {fileID: 500867929}
   - component: {fileID: 500867928}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,7 +1047,7 @@ GameObject:
   - component: {fileID: 1254309067}
   - component: {fileID: 1254309066}
   - component: {fileID: 1254309065}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
 --- !u!114 &1254309066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 1312269901}
   - component: {fileID: 1312269903}
   - component: {fileID: 1312269902}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1344,7 +1344,6 @@ GameObject:
   - component: {fileID: 1616893209}
   - component: {fileID: 1616893208}
   - component: {fileID: 1616893207}
-  - component: {fileID: 1616893210}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1402,20 +1401,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1616893210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616893206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a07e911e985f1b44b25bbe9113f8ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pinkPixel: {fileID: 0}
-  playerCamera: {fileID: 963194227}
 --- !u!1001 &1639140140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1490,7 +1475,7 @@ GameObject:
   - component: {fileID: 1981118376}
   - component: {fileID: 1981118375}
   - component: {fileID: 1981118374}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -18,6 +18,8 @@ public class CameraScreen : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("poopoo peepee");
+        
         RectTransformUtility.ScreenPointToLocalPointInRectangle(_screenRectTransform, eventData.position, null, out Vector2 localClick);
         localClick.y = (_screenRectTransform.rect.yMin * -1) - (localClick.y * -1);
         
