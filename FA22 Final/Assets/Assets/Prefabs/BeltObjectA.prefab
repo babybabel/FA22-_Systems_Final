@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5807185590247691752}
   - component: {fileID: 4878177884281222214}
   - component: {fileID: -350776141098207732}
-  - component: {fileID: -2330980934187602548}
   m_Layer: 0
   m_Name: BeltObjectA
   m_TagString: Untagged
@@ -170,17 +169,3 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
---- !u!114 &-2330980934187602548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2535867006216760779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a07e911e985f1b44b25bbe9113f8ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pinkPixel: {fileID: 0}
-  playerCamera: {fileID: 0}
