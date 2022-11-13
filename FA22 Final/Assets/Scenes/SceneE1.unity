@@ -893,13 +893,13 @@ MonoBehaviour:
   polygonalDrawDistance: 0
   vertexInaccuracy: 0
   polygonInaccuracy: 0
-  colorDepth: 5
+  colorDepth: 24
   scanlines: 0
   scanlineIntensity: 5
   ditherTexture: {fileID: 0}
   dithering: 1
   ditherThreshold: 1
-  ditherIntensity: 12
+  ditherIntensity: 5
   maxDarkness: 20
   subtractFade: 0
   favorRed: 1
