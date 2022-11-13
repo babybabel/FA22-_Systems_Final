@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class FunnelTrigger : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public bool Game1Fail = false;
+    
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("BeltObjectA"))
         {
@@ -15,6 +17,7 @@ public class FunnelTrigger : MonoBehaviour
         if (other.CompareTag("BeltObjectB"))
         {
             Debug.Log("Fail");
+            Game1Fail = true;
         }
     }
 }

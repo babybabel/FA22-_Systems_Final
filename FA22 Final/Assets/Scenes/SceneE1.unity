@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 190501}
   - component: {fileID: 190502}
+  - component: {fileID: 190503}
   m_Layer: 0
   m_Name: EdgeDetector
   m_TagString: Untagged
@@ -168,6 +169,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.07, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &190503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074d57efeca6ecd439f83995b8d954ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game1Fail: 0
 --- !u!1 &47105991
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3577815554359337718, guid: 8b110d7781e0c3d49a53fd080606aabb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.669
+      value: 3.919
       objectReference: {fileID: 0}
     - target: {fileID: 3577815554359337718, guid: 8b110d7781e0c3d49a53fd080606aabb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -671,6 +685,7 @@ GameObject:
   - component: {fileID: 480095164}
   - component: {fileID: 480095165}
   - component: {fileID: 480095166}
+  - component: {fileID: 480095167}
   m_Layer: 0
   m_Name: CameraAxis
   m_TagString: Untagged
@@ -726,6 +741,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612c9fe6dd75a8d479482e641b3eb549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &480095167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480095163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3dbc582e438a524497d5697b8758bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnelTrigger: {fileID: 829022720}
+  edgeTrigger: {fileID: 190503}
 --- !u!1001 &481610736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1089,7 +1118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &707137243
 Transform:
   m_ObjectHideFlags: 0
@@ -1117,6 +1146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3dbc582e438a524497d5697b8758bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  funnelTrigger: {fileID: 0}
+  edgeTrigger: {fileID: 0}
 --- !u!4 &713816370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
@@ -1135,7 +1166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3577815554359337718, guid: 8b110d7781e0c3d49a53fd080606aabb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.399
+      value: 3.649
       objectReference: {fileID: 0}
     - target: {fileID: 3577815554359337718, guid: 8b110d7781e0c3d49a53fd080606aabb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1237,6 +1268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c46386ef01a9a904ea920f83e47a65ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Game1Fail: 0
 --- !u!1 &867492800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,7 +1766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.504
+      value: 2.754
       objectReference: {fileID: 0}
     - target: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1791,7 +1823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.183
+      value: 3.433
       objectReference: {fileID: 0}
     - target: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2130,7 +2162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.59
+      value: 2.84
       objectReference: {fileID: 0}
     - target: {fileID: 5226885816793512575, guid: 09b79f42a93f3ad44b568497b4b6502b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2183,7 +2215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3577815554359337718, guid: 8b110d7781e0c3d49a53fd080606aabb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3919997
+      value: 2.6419997
       objectReference: {fileID: 0}
     - target: {fileID: 3577815554359337718, guid: 8b110d7781e0c3d49a53fd080606aabb, type: 3}
       propertyPath: m_LocalPosition.y
