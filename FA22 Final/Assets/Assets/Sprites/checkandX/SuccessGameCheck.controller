@@ -11,7 +11,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7851555828506041641}
-    m_Position: {x: 270, y: 160, z: 0}
+    m_Position: {x: 270, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -574160923002647711}
     m_Position: {x: 270, y: 100, z: 0}
@@ -80,7 +80,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Checkanim
+  m_Name: checkAnim
   m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:

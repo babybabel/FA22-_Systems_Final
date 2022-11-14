@@ -23,12 +23,12 @@ public class Game1Manager : MonoBehaviour
         if (funnelTrigger.Game1Fail == false || edgeTrigger.Game1Fail == false)
         {
             Debug.Log("You Passed Game 1!");
-            successAnim.Play("Checkanim");
+            successAnim.Play("checkAnim");
         }
         if (funnelTrigger.Game1Fail == true || edgeTrigger.Game1Fail == true)
         {
             Debug.Log("You Failed Game 1!");
-            failAnim.Play("Xanim");
+            failAnim.Play("xAnim");
         }
     }
     
