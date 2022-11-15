@@ -7,8 +7,8 @@ public class Game1Manager : MonoBehaviour
 {
     public FunnelTrigger funnelTrigger;
     public EdgeTrigger edgeTrigger;
-    public Animator failAnim;
-    public Animator successAnim;
+    [SerializeField] Animator failAnim;
+    [SerializeField] Animator successAnim;
 
     private void Start()
     {
@@ -20,15 +20,15 @@ public class Game1Manager : MonoBehaviour
 
     public void Game1Results()
     {
-        if (funnelTrigger.Game1Fail == false || edgeTrigger.Game1Fail == false)
+        if (funnelTrigger.Game1Fail == false && edgeTrigger.Game1Fail == false)
         {
             Debug.Log("You Passed Game 1!");
-            successAnim.Play("checkAnim");
+            successAnim.Play("check");
         }
         if (funnelTrigger.Game1Fail == true || edgeTrigger.Game1Fail == true)
         {
             Debug.Log("You Failed Game 1!");
-            failAnim.Play("xAnim");
+            failAnim.Play("x");
         }
     }
     
