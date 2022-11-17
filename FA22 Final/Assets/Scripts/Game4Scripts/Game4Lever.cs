@@ -51,7 +51,7 @@ public class Game4Lever : MonoBehaviour
 
         if (leverCounter == 25)
         {
-            Game4Fail = true;
+            Game4Fail = false;
             Debug.Log("Pass!");
             leverCounter++;
         }

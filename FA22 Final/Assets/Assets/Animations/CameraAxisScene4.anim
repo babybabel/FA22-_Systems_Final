@@ -101,24 +101,24 @@ AnimationClip:
         time: 14
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: -0, y: -0, z: -0}
-        outSlope: {x: -0.058, y: -1.158, z: 0}
+        outSlope: {x: 0.105, y: -1.026, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 15
-        value: {x: -0.058, y: -1.158, z: 0}
-        inSlope: {x: -0.058, y: -1.158, z: -0}
-        outSlope: {x: 0.16299999, y: 0.024999976, z: 0}
+        value: {x: 0.105, y: -1.026, z: 0}
+        inSlope: {x: 0.105, y: -1.026, z: -0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 16
-        value: {x: 0.105, y: -1.133, z: 0}
-        inSlope: {x: 0.16299999, y: 0.024999976, z: -0}
+        value: {x: 0.105, y: -1.026, z: 0}
+        inSlope: {x: -0, y: -0, z: -0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
@@ -444,16 +444,16 @@ AnimationClip:
         time: 14
         value: 0
         inSlope: -0
-        outSlope: -0.058
+        outSlope: 0.105
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 15
-        value: -0.058
-        inSlope: -0.058
-        outSlope: 0.16299999
+        value: 0.105
+        inSlope: 0.105
+        outSlope: 0
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
@@ -461,7 +461,7 @@ AnimationClip:
       - serializedVersion: 3
         time: 16
         value: 0.105
-        inSlope: 0.16299999
+        inSlope: -0
         outSlope: 0
         tangentMode: 69
         weightedMode: 0
@@ -508,24 +508,24 @@ AnimationClip:
         time: 14
         value: 0
         inSlope: -0
-        outSlope: -1.158
+        outSlope: -1.026
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 15
-        value: -1.158
-        inSlope: -1.158
-        outSlope: 0.024999976
+        value: -1.026
+        inSlope: -1.026
+        outSlope: 0
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 16
-        value: -1.133
-        inSlope: 0.024999976
+        value: -1.026
+        inSlope: -0
         outSlope: 0
         tangentMode: 69
         weightedMode: 0
@@ -700,6 +700,13 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 10
+    functionName: Game4Results
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 16
     functionName: LoadSceneE5
     data: 

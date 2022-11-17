@@ -2,26 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game2Manager : MonoBehaviour
+public class Game4Manager : MonoBehaviour
 {
-
-    public LightClicker lightClicker;
+   
+    public Game4Lever Lever;
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
     
     private void Start()
     {
-        lightClicker = GameObject.Find("LightClicker").GetComponent<LightClicker>();
+        Lever = GameObject.Find("Game4Lever").GetComponent<Game4Lever>();
+        //failAnim = GetComponent<Animator>();
+        //successAnim = GetComponent<Animator>();
     }
-
-    public void Game2Results()
+    
+    public void Game4Results()
     {
-        if (lightClicker.Game2Fail == false)
+        if (Lever.Game4Fail == false)
         {
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
         }
-        if (lightClicker.Game2Fail == true)
+        if (Lever.Game4Fail == true)
         {
             Debug.Log("You Failed Game 2!");
             failAnim.SetActive(true);
