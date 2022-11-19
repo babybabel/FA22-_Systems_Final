@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,16 @@ using UnityEngine;
 public class KittyCaller : MonoBehaviour
 {
 
-    public GameObject[] kittyArr;
+    public KittyAnimator[] kittyArr;
     public GameObject[] kittyCols;
     
+    
     void Start()
+    {
+        
+    }
+
+    private void Update()
     {
         
     }
@@ -16,8 +23,17 @@ public class KittyCaller : MonoBehaviour
     void CallKitty1()
     {
 
-        kittyCols[1].gameObject.SetActive(true);
+        kittyCols[0].gameObject.SetActive(true);
+        kittyArr[0].KittyAnimateUp();
+
+    }
+
+    void KittyClose1()
+    {
         
+        kittyCols[0].gameObject.SetActive(false);
+        //kittyArr[0].KittyAnimateDown();
+
     }
     
     
