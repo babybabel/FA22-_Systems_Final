@@ -21,7 +21,7 @@ public class KittyCaller : MonoBehaviour
 
     private void Update()
     {
-        if (kittyCounter == 3)
+        if (kittyCounter == 8)
         {
             Game5Fail = false;
         }
