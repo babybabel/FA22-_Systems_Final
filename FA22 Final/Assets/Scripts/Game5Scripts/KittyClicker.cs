@@ -7,9 +7,8 @@ public class KittyClicker : MonoBehaviour
 {
 
     public KittyAnimator kittyAnimator;
+    public KittyCaller kittyCaller;
     
-    public int KittyCounter;
-
     void Start()
     {
         //kittyCaller = GameObject.Find("KittyContainer").GetComponent<KittyCaller>();
@@ -18,10 +17,9 @@ public class KittyClicker : MonoBehaviour
     public void OnMouseDown()
     {
         gameObject.SetActive(false);
-        KittyCounter++;
         kittyAnimator.KittySquelch();
-        Debug.Log(KittyCounter);
-        //Debug.Log("Clicked!");
+        kittyCaller.KittyCount();
+        Debug.Log("Clicked!");
 
     }
 

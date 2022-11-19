@@ -179,4 +179,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kittyAnimator: {fileID: 4228834003762668492}
-  KittyCounter: 0
+  kittyCounter: {fileID: 0}
