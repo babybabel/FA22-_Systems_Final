@@ -21,6 +21,7 @@ public class Game5Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 5!");
             successAnim.SetActive(true);
+            Scoring.totalScore++;
         }
         if (kittyCaller.Game5Fail == true)
         {

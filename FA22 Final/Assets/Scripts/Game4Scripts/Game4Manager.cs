@@ -22,6 +22,7 @@ public class Game4Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
+            Scoring.totalScore++;
         }
         if (Lever.Game4Fail == true)
         {

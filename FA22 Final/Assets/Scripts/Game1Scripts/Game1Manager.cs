@@ -24,6 +24,7 @@ public class Game1Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 1!");
             successAnim.SetActive(true);
+            Scoring.totalScore++;
         }
         if (funnelTrigger.Game1Fail == true || edgeTrigger.Game1Fail == true)
         {

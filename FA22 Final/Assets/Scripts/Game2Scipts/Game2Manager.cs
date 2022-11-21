@@ -20,6 +20,7 @@ public class Game2Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
+            Scoring.totalScore++;
         }
         if (lightClicker.Game2Fail == true)
         {

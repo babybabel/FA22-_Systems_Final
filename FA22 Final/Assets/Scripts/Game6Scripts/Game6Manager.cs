@@ -26,6 +26,7 @@ public class Game6Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 6!");
             successAnim.SetActive(true);
+            Scoring.totalScore++;
         }
     }
     
