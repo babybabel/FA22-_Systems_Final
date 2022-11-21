@@ -13,7 +13,6 @@ public class Game5Manager : MonoBehaviour
     void Start()
     {
         kittyCaller = GameObject.Find("KittyContainer").GetComponent<KittyCaller>();
-
     }
 
     public void Game5Results()
