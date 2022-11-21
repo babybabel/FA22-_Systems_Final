@@ -7,6 +7,10 @@ public class ButtonPusher : MonoBehaviour
 {
 
     public Animator anim;
+
+    public ButtonMatcher match;
+
+    public int buttonCode;
     
     void Start()
     {
@@ -15,11 +19,16 @@ public class ButtonPusher : MonoBehaviour
 
     private void OnMouseDown()
     {
-        anim.Play("ButtonPush");
-    }
 
-    void Update()
-    {
+        anim.Play("ButtonPush");
+
+        if (buttonCode == 0)
+        {
+            match.buttonPress0();
+        }
+        
+        
         
     }
+
 }
