@@ -16,8 +16,11 @@ public class Game4Lever : MonoBehaviour
 
     public bool Game4Fail = true;
 
+    public ParticleSystem spark;
+    
     void Start()
     {
+        spark = GameObject.Find("Particle").GetComponent<ParticleSystem>();
         animLever = GetComponent<Animator>();
         //animArm = GetComponent<Animator>();
         slider.onValueChanged.AddListener((v) =>
@@ -45,6 +48,7 @@ public class Game4Lever : MonoBehaviour
         {
             //Debug.Log("good!");
             leverCounter++;
+            spark.Play();
         }
         
         Debug.Log(leverCounter);
