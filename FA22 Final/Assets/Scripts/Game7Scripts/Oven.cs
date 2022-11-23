@@ -15,6 +15,12 @@ public class Oven : MonoBehaviour
     public bool Game7Fail = true;
 
     public bool Game7Fucked = false;
+
+    [SerializeField] AudioSource ovenDoor;
+    [SerializeField] AudioSource ovenDing;
+    [SerializeField] AudioSource ovenTick;
+    [SerializeField] AudioSource ovenAmbient;
+
     
     void Start()
     {
@@ -28,6 +34,10 @@ public class Oven : MonoBehaviour
         isReady = true;
         timer.TimerTime();
         Debug.Log("Now!");
+        
+        ovenAmbient.Stop();
+        ovenTick.mute = true;
+        ovenDing.Play();
     }
 
     void NoLongerReady()
@@ -39,6 +49,7 @@ public class Oven : MonoBehaviour
     private void OnMouseDown()
     {
         ovenanim.Play("OpenOven");
+        ovenDoor.Play();
 
         if (isReady == true)
         {

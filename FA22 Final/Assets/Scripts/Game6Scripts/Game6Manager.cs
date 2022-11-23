@@ -10,6 +10,10 @@ public class Game6Manager : MonoBehaviour
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
     
+    [SerializeField] AudioSource successChime;
+    [SerializeField] AudioSource failChime;
+    [SerializeField] AudioSource evil;
+
     void Start()
     {
         keyboard = GameObject.Find("Keyboard").GetComponent<Keyboard>();
@@ -21,11 +25,14 @@ public class Game6Manager : MonoBehaviour
         {
             Debug.Log("You Failed Game 6!");
             failAnim.SetActive(true);
+            failChime.Play();
         }
         if (keyboard.Game6Fail == false && keyboard.Game6Fucked == false)
         {
             Debug.Log("You Passed Game 6!");
             successAnim.SetActive(true);
+            successChime.Play();
+            evil.Play();
             Scoring.totalScore++;
         }
     }

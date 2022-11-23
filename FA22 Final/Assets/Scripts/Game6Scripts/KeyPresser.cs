@@ -14,6 +14,9 @@ public class KeyPresser : MonoBehaviour
 
     public Keyboard keyboard;
     
+    [SerializeField] AudioSource keySpeak;
+    [SerializeField] AudioSource keyClick;
+    
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -22,6 +25,10 @@ public class KeyPresser : MonoBehaviour
     public void OnMouseDown()
     {
         anim.Play("KeyPress");
+
+        keySpeak.PlayDelayed(0.1f);
+        
+        keyClick.Play();
         
         if (keycode == "Q")
         {

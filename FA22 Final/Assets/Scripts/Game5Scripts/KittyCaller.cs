@@ -13,6 +13,8 @@ public class KittyCaller : MonoBehaviour
 
     public bool Game5Fail = true;
 
+    
+    
     public void KittyCount()
     {
         kittyCounter++;

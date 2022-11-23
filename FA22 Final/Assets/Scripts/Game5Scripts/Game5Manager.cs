@@ -10,6 +10,9 @@ public class Game5Manager : MonoBehaviour
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
     
+    [SerializeField] AudioSource successChime;
+    [SerializeField] AudioSource failChime;
+    
     void Start()
     {
         kittyCaller = GameObject.Find("KittyContainer").GetComponent<KittyCaller>();
@@ -21,12 +24,14 @@ public class Game5Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 5!");
             successAnim.SetActive(true);
+            successChime.Play();
             Scoring.totalScore++;
         }
         if (kittyCaller.Game5Fail == true)
         {
             Debug.Log("You Failed Game 5!");
             failAnim.SetActive(true);
+            failChime.Play();
         }
     }
     

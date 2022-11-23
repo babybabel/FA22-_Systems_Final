@@ -31,7 +31,8 @@ public class Game4Lever : MonoBehaviour
         });
         
         InvokeRepeating("LeverTracker", 0f, .25f);
-        
+        Invoke("NeedleStopper", 10f);
+
     }
 
     void Update()
@@ -41,6 +42,11 @@ public class Game4Lever : MonoBehaviour
         animLever.SetFloat("Lever", lever);
         
         
+    }
+
+    void NeedleStopper()
+    {
+        needleHit.mute = true;
     }
 
     void LeverTracker()
