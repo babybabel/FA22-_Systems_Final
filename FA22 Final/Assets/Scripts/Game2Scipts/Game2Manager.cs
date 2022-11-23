@@ -9,6 +9,9 @@ public class Game2Manager : MonoBehaviour
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
     
+    [SerializeField] AudioSource successChime;
+    [SerializeField] AudioSource failChime;
+
     private void Start()
     {
         lightClicker = GameObject.Find("LightClicker").GetComponent<LightClicker>();
@@ -20,12 +23,14 @@ public class Game2Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
+            successChime.Play();
             Scoring.totalScore++;
         }
         if (lightClicker.Game2Fail == true)
         {
             Debug.Log("You Failed Game 2!");
             failAnim.SetActive(true);
+            failChime.Play();
         }
     }
     

@@ -10,6 +10,9 @@ public class Game3Manager : MonoBehaviour
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
     
+    [SerializeField] AudioSource successChime;
+    [SerializeField] AudioSource failChime;
+
     void Start()
     {
         buttonMatcher = GameObject.Find("buttonMaster").GetComponent<ButtonMatcher>();
@@ -21,11 +24,13 @@ public class Game3Manager : MonoBehaviour
         {
             Debug.Log("You Failed Game 3!");
             failAnim.SetActive(true);
+            failChime.Play();
         }
         if (buttonMatcher.Game3Fail == false)
         {
             Debug.Log("You Passed Game 3!");
             successAnim.SetActive(true);
+            successChime.Play();
             Scoring.totalScore++;
         }
     }

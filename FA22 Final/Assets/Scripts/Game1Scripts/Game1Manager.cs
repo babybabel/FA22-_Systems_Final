@@ -10,12 +10,13 @@ public class Game1Manager : MonoBehaviour
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
 
+    [SerializeField] AudioSource successChime;
+    [SerializeField] AudioSource failChime;
+
     private void Start()
     {
         funnelTrigger = GameObject.Find("FunnelTrigger").GetComponent<FunnelTrigger>();
         edgeTrigger = GameObject.Find("EdgeTrigger").GetComponent<EdgeTrigger>();
-        //failAnim = GetComponent<Animator>();
-        //successAnim = GetComponent<Animator>();
     }
 
     public void Game1Results()
@@ -24,12 +25,14 @@ public class Game1Manager : MonoBehaviour
         {
             Debug.Log("You Passed Game 1!");
             successAnim.SetActive(true);
+            successChime.Play();
             Scoring.totalScore++;
         }
         if (funnelTrigger.Game1Fail == true || edgeTrigger.Game1Fail == true)
         {
             Debug.Log("You Failed Game 1!");
             failAnim.SetActive(true);
+            failChime.Play();
         }
     }
     

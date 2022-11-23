@@ -7,7 +7,7 @@ public class Game4Lever : MonoBehaviour
 {
 
     public Animator animLever;
-    //public Animator animArm;
+
     public Slider slider;
     
     private float lever = 0.0f;
@@ -17,6 +17,8 @@ public class Game4Lever : MonoBehaviour
     public bool Game4Fail = true;
 
     public ParticleSystem spark;
+
+    [SerializeField] AudioSource needleHit;
     
     void Start()
     {
@@ -49,6 +51,7 @@ public class Game4Lever : MonoBehaviour
             //Debug.Log("good!");
             leverCounter++;
             spark.Play();
+            needleHit.Play();
         }
         
         Debug.Log(leverCounter);

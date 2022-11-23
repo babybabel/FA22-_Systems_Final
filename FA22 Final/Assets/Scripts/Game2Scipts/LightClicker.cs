@@ -12,6 +12,11 @@ public class LightClicker : MonoBehaviour
 
     public bool Game2Fail = true;
 
+    [SerializeField] AudioSource click;
+    [SerializeField] AudioSource light;
+    [SerializeField] AudioSource lit;
+
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -19,6 +24,8 @@ public class LightClicker : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
+        click.Play();
 
         if (clickTracker < 20)
         {
@@ -33,6 +40,9 @@ public class LightClicker : MonoBehaviour
 
         if (clickTracker == 20)
         {
+            
+            light.Play();
+            lit.Play();
             
             anim.Play("IgnitionMajor");
             
