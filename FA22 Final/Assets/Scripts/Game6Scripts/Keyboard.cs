@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Keyboard : MonoBehaviour
 {
+    public CalamaxController lich;
 
     public KeyPresser[] key;
 
@@ -26,17 +27,21 @@ public class Keyboard : MonoBehaviour
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+
         }
         if ((charFilled[0] == false || charFilled[1] == false) && charFilled[2] == true)
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+
         }
         if ((charFilled[0] == false) && charFilled[1] == true)
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+
         }
+
         
     }
 
@@ -45,12 +50,14 @@ public class Keyboard : MonoBehaviour
         Debug.Log("The Q key has been pressed");
             Game6Fucked = true;
             Debug.Log("you fucked up");
-        }
+            lich.Lich4Bubble_Game6();
+    }
     public void KeyPressedW()
     {
         Debug.Log("The W key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedE()
     {
@@ -64,6 +71,7 @@ public class Keyboard : MonoBehaviour
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+            lich.Lich4Bubble_Game6();
         }
     }
     public void KeyPressedR()
@@ -71,24 +79,28 @@ public class Keyboard : MonoBehaviour
         Debug.Log("The R key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedT()
     {
         Debug.Log("The T key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedY()
     {
         Debug.Log("The Y key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedU()
     {
         Debug.Log("The U key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedI()
     {
@@ -102,6 +114,7 @@ public class Keyboard : MonoBehaviour
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+            lich.Lich4Bubble_Game6();
         }
     }
     public void KeyPressedO()
@@ -109,60 +122,70 @@ public class Keyboard : MonoBehaviour
         Debug.Log("The O key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedP()
     {
         Debug.Log("The P key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedA()
     {
         Debug.Log("The A key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedS()
     {
         Debug.Log("The S key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedD()
     {
         Debug.Log("The D key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedF()
     {
         Debug.Log("The F key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedG()
     {
         Debug.Log("The G key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedH()
     {
         Debug.Log("The H key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedJ()
     {
         Debug.Log("The J key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedK()
     {
         Debug.Log("The K key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedL()
     {
@@ -178,6 +201,7 @@ public class Keyboard : MonoBehaviour
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+            lich.Lich4Bubble_Game6();
         }
     }
     public void KeyPressedZ()
@@ -185,18 +209,21 @@ public class Keyboard : MonoBehaviour
         Debug.Log("The Z key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedX()
     {
         Debug.Log("The X key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedC()
     {
         Debug.Log("The C key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedV()
     {
@@ -210,6 +237,7 @@ public class Keyboard : MonoBehaviour
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+            lich.Lich4Bubble_Game6();
         }
     }
     public void KeyPressedB()
@@ -217,18 +245,21 @@ public class Keyboard : MonoBehaviour
         Debug.Log("The B key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedN()
     {
         Debug.Log("The N key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
     public void KeyPressedM()
     {
         Debug.Log("The M key has been pressed");
         Game6Fucked = true;
         Debug.Log("you fucked up");
+        lich.Lich4Bubble_Game6();
     }
 
 }

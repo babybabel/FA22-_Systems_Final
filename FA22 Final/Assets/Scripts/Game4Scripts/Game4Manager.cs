@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Game4Manager : MonoBehaviour
 {
-   
+
+    public CalamaxController lich;
+    
     public Game4Lever Lever;
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
@@ -24,6 +26,7 @@ public class Game4Manager : MonoBehaviour
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
             successChime.Play();
+            lich.LichSip();
             Scoring.totalScore++;
         }
         if (Lever.Game4Fail == true)
@@ -31,6 +34,7 @@ public class Game4Manager : MonoBehaviour
             Debug.Log("You Failed Game 2!");
             failAnim.SetActive(true);
             failChime.Play();
+            lich.LichFail();
         }
     }
     

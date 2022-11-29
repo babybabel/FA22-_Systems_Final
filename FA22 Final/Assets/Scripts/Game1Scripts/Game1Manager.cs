@@ -13,6 +13,8 @@ public class Game1Manager : MonoBehaviour
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
 
+    public CalamaxController lich;
+
     private void Start()
     {
         funnelTrigger = GameObject.Find("FunnelTrigger").GetComponent<FunnelTrigger>();
@@ -27,12 +29,14 @@ public class Game1Manager : MonoBehaviour
             successAnim.SetActive(true);
             successChime.Play();
             Scoring.totalScore++;
+            lich.LichSuccess();
         }
         if (funnelTrigger.Game1Fail == true || edgeTrigger.Game1Fail == true)
         {
             Debug.Log("You Failed Game 1!");
             failAnim.SetActive(true);
             failChime.Play();
+            lich.LichFail();
         }
     }
     

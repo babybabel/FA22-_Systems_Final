@@ -12,19 +12,19 @@ public class Game4Lever : MonoBehaviour
     
     private float lever = 0.0f;
 
-    private int leverCounter = 0;
+    public int leverCounter = 0;
 
     public bool Game4Fail = true;
 
     public ParticleSystem spark;
-
+    
     [SerializeField] AudioSource needleHit;
     
     void Start()
     {
         spark = GameObject.Find("Particle").GetComponent<ParticleSystem>();
         animLever = GetComponent<Animator>();
-        //animArm = GetComponent<Animator>();
+        
         slider.onValueChanged.AddListener((v) =>
         {
             lever = v;
@@ -40,7 +40,6 @@ public class Game4Lever : MonoBehaviour
 
         //animArm.SetFloat("Arm", lever);
         animLever.SetFloat("Lever", lever);
-        
         
     }
 

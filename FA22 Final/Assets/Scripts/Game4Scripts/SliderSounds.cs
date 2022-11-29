@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class SliderSounds : MonoBehaviour
 {
 
+    public CalamaxController lich;
+
     public Slider slider;
     
     [SerializeField] AudioSource levergrab;
@@ -18,6 +20,7 @@ public class SliderSounds : MonoBehaviour
     {
         levergrab.Play();
         leverhold.Play();
+        lich.Lich3Grab();
         Debug.Log("BLAHHH");
     }
 
@@ -25,6 +28,7 @@ public class SliderSounds : MonoBehaviour
     {
         leverhold.Stop();
         leverrelease.Play();
+        lich.Lich3Def();
         Debug.Log("FUCKK");
     }
 

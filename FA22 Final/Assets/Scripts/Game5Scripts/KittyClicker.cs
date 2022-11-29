@@ -6,6 +6,8 @@ using UnityEngine;
 public class KittyClicker : MonoBehaviour
 {
 
+    public CalamaxController lich;
+
     public KittyAnimator kittyAnimator;
     public KittyCaller kittyCaller;
     
@@ -20,7 +22,7 @@ public class KittyClicker : MonoBehaviour
         kittyAnimator.KittySquelch();
         kittyCaller.KittyCount();
         Debug.Log("Clicked!");
-
+        lich.LichPoke();
     }
 
 }

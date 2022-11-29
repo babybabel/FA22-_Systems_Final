@@ -6,6 +6,8 @@ using UnityEngine;
 public class Oven : MonoBehaviour
 {
 
+    public CalamaxController lich;
+
     public TimerAnimator timer;
 
     public Animator ovenanim;
@@ -55,12 +57,14 @@ public class Oven : MonoBehaviour
         {
             Debug.Log("Got it!");
             Game7Fail = false;
+            lich.Lich3();
         }
 
         if (isReady == false)
         {
             Debug.Log("You fucked up!");
             Game7Fucked = true;
+            lich.Lich4Fail();
         }
     }
 }

@@ -6,6 +6,8 @@ using UnityEngine;
 public class LightClicker : MonoBehaviour
 {
 
+    public CalamaxController lich;
+    
     private int clickTracker = 0;
 
     public Animator anim;
@@ -26,10 +28,13 @@ public class LightClicker : MonoBehaviour
     {
         
         click.Play();
+        
 
         if (clickTracker < 20)
         {
             
+            lich.Lich3Click();
+
             Debug.Log("clicked");
 
             clickTracker += 1;
@@ -43,6 +48,7 @@ public class LightClicker : MonoBehaviour
             
             light.Play();
             lit.Play();
+            lich.Lich1Click();
             
             anim.Play("IgnitionMajor");
             
@@ -56,7 +62,8 @@ public class LightClicker : MonoBehaviour
 
         if (clickTracker > 20)
         {
-            
+            lich.Lich1Click();
+
             anim.Play("IgnitionOver");
             
             Game2Fail = false;

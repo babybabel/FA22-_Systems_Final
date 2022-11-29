@@ -5,6 +5,8 @@ using UnityEngine;
 public class Game2Manager : MonoBehaviour
 {
 
+    public CalamaxController lich;
+
     public LightClicker lightClicker;
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
@@ -25,12 +27,14 @@ public class Game2Manager : MonoBehaviour
             successAnim.SetActive(true);
             successChime.Play();
             Scoring.totalScore++;
+            lich.LichSuccess();
         }
         if (lightClicker.Game2Fail == true)
         {
             Debug.Log("You Failed Game 2!");
             failAnim.SetActive(true);
             failChime.Play();
+            lich.LichFail();
         }
     }
     

@@ -5,6 +5,8 @@ using UnityEngine;
 public class Game7Manager : MonoBehaviour
 {
 
+    public CalamaxController lich;
+
     public Oven oven;
 
     [SerializeField] GameObject failAnim;
@@ -27,12 +29,14 @@ public class Game7Manager : MonoBehaviour
             Debug.Log("You Failed Game 7!");
             failAnim.SetActive(true);
             failChime.Play();
+            lich.LichFail();
         }
         if (oven.Game7Fail == false && oven.Game7Fucked == false)
         {
             Debug.Log("You Passed Game 7!");
             successAnim.SetActive(true);
             successChime.Play();
+            lich.LichSuccess();
             Scoring.totalScore++;
             Debug.Log(Scoring.totalScore);
         }

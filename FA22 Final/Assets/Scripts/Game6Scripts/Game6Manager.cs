@@ -5,6 +5,8 @@ using UnityEngine;
 public class Game6Manager : MonoBehaviour
 {
 
+    public CalamaxController lich;
+
     public Keyboard keyboard;
     
     [SerializeField] GameObject failAnim;
@@ -26,6 +28,7 @@ public class Game6Manager : MonoBehaviour
             Debug.Log("You Failed Game 6!");
             failAnim.SetActive(true);
             failChime.Play();
+            lich.LichFail();
         }
         if (keyboard.Game6Fail == false && keyboard.Game6Fucked == false)
         {
@@ -33,6 +36,7 @@ public class Game6Manager : MonoBehaviour
             successAnim.SetActive(true);
             successChime.Play();
             evil.Play();
+            lich.LichSuccess();
             Scoring.totalScore++;
         }
     }

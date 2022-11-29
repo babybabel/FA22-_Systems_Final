@@ -8,6 +8,8 @@ public class FunnelTrigger : MonoBehaviour
     public bool Game1Fail = false;
 
     [SerializeField] AudioSource plop;
+
+    public CalamaxController lich;
     
     public void OnTriggerEnter(Collider other)
     {
@@ -22,6 +24,7 @@ public class FunnelTrigger : MonoBehaviour
             Debug.Log("Fail");
             Game1Fail = true;
             plop.Play();
+            lich.Lich4Bubble_Game1();
         }
     }
 }
