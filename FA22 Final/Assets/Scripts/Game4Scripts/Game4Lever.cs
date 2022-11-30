@@ -11,6 +11,8 @@ public class Game4Lever : MonoBehaviour
     public Slider slider;
     
     private float lever = 0.0f;
+    
+    private float sipCupPitch;
 
     public int leverCounter = 0;
 
@@ -19,6 +21,8 @@ public class Game4Lever : MonoBehaviour
     public ParticleSystem spark;
     
     [SerializeField] AudioSource needleHit;
+
+    [SerializeField] AudioSource sipCup;
     
     void Start()
     {
@@ -46,6 +50,8 @@ public class Game4Lever : MonoBehaviour
     void NeedleStopper()
     {
         needleHit.mute = true;
+        sipCup.mute = true;
+        spark.Stop();
     }
 
     void LeverTracker()
@@ -57,6 +63,9 @@ public class Game4Lever : MonoBehaviour
             leverCounter++;
             spark.Play();
             needleHit.Play();
+            sipCup.Play();
+            sipCupPitch += .05f;
+            sipCup.pitch = sipCupPitch;
         }
         
         Debug.Log(leverCounter);

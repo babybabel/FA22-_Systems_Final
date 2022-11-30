@@ -2,11 +2,18 @@ fileFormatVersion: 2
 guid: 4cc2b73c0a878b846acdd915762c7b51
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable:
+  internalIDToNameTable: []
+  externalObjects:
   - first:
-      74: -4869403039331326923
-    second: Cube.011|Cube.011Action
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lighter
+    second: {fileID: 2100000, guid: 3f7ce5aaf1cb87d45ba0db3a0485e68a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lighterarrow
+    second: {fileID: 2100000, guid: ccb865b27bb47e242a50b69065ccebba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -15,6 +15,10 @@ public class Keyboard : MonoBehaviour
     public bool Game6Fail = true;
     public bool Game6Fucked = false;
 
+    public Material[] compScreenMat;
+
+    public GameObject compScreen;
+
     void Start()
     {
         key = GameObject.Find("KeyboardKey").GetComponents<KeyPresser>();
@@ -66,6 +70,9 @@ public class Keyboard : MonoBehaviour
         if (charFilled[0] == false)
         {
             charFilled[0] = true;
+
+            compScreen.GetComponent<MeshRenderer>().material = compScreenMat[0];
+
         }
         else
         {
@@ -109,6 +116,9 @@ public class Keyboard : MonoBehaviour
         if (charFilled[2] == false)
         {
             charFilled[2] = true;
+            
+            compScreen.GetComponent<MeshRenderer>().material = compScreenMat[2];
+
         }
         else
         {
@@ -196,6 +206,8 @@ public class Keyboard : MonoBehaviour
             charFilled[3] = true;
             Game6Fail = false;
             Debug.Log("you did it!");
+            
+            compScreen.GetComponent<MeshRenderer>().material = compScreenMat[3];
         }
         else
         {
@@ -232,6 +244,9 @@ public class Keyboard : MonoBehaviour
         if (charFilled[1] == false)
         {
             charFilled[1] = true;
+            
+            compScreen.GetComponent<MeshRenderer>().material = compScreenMat[1];
+
         }
         else
         {

@@ -7,6 +7,8 @@ public class LightClicker : MonoBehaviour
 {
 
     public CalamaxController lich;
+
+    public GameObject burner;
     
     private int clickTracker = 0;
 
@@ -57,6 +59,8 @@ public class LightClicker : MonoBehaviour
             clickTracker += 1;
 
             Game2Fail = false;
+
+            burner.SetActive(true);
 
         }
 
