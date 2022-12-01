@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 17f7d89e624e0104c8af377372487104
+guid: a64253925593ce5488107421e6aa34dc
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spinny
+    second: {fileID: 2100000, guid: 58fa8a2a3e7bd074aad3eecb3cc21e14, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

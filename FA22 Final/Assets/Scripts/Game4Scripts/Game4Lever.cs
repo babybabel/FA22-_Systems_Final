@@ -64,13 +64,13 @@ public class Game4Lever : MonoBehaviour
             spark.Play();
             needleHit.Play();
             sipCup.Play();
-            sipCupPitch += .05f;
+            sipCupPitch += .04f;
             sipCup.pitch = sipCupPitch;
         }
         
         Debug.Log(leverCounter);
 
-        if (leverCounter == 25)
+        if (leverCounter == 20)
         {
             Game4Fail = false;
             Debug.Log("Pass!");

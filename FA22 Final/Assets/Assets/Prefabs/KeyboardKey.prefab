@@ -256,6 +256,8 @@ MonoBehaviour:
   keycode: 
   keycodePressed: 0
   keyboard: {fileID: 0}
+  keySpeak: {fileID: 0}
+  keyClick: {fileID: 0}
 --- !u!1001 &1428707162311605179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -319,6 +321,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c05fdd38cac39a24482f21ee2f28c154, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccb865b27bb47e242a50b69065ccebba, type: 2}
     - target: {fileID: 919132149155446097, guid: c05fdd38cac39a24482f21ee2f28c154, type: 3}
       propertyPath: m_Name
       value: keyboardbutton

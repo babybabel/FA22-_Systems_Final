@@ -23,12 +23,18 @@ public class Oven : MonoBehaviour
     [SerializeField] AudioSource ovenTick;
     [SerializeField] AudioSource ovenAmbient;
 
+    public Material[] ovenlight;
+
+    public GameObject ovenlightmesh;
+
     
     void Start()
     {
         ovenanim = GetComponent<Animator>();
         Invoke("BecomeReady", 6f);
         Invoke("NoLongerReady", 7.5f);
+        
+        
     }
 
     void BecomeReady()
@@ -36,7 +42,7 @@ public class Oven : MonoBehaviour
         isReady = true;
         timer.TimerTime();
         Debug.Log("Now!");
-        
+        ovenlightmesh.GetComponent<MeshRenderer>().material = ovenlight[1];
         ovenAmbient.Stop();
         ovenTick.mute = true;
         ovenDing.Play();

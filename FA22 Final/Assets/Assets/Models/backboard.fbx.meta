@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: basedarkgreen
-    second: {fileID: 2100000, guid: 87ecb985b88e933478493cb8b6fcbbfd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: basedarkpurp
-    second: {fileID: 2100000, guid: 0a3dcf404760b644f9f67655f4e08b4b, type: 2}
+      name: basedarkblue
+    second: {fileID: 2100000, guid: 4a47cafe9dd0af444908054c6e56af14, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -24,6 +19,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: groundtex
     second: {fileID: 2100000, guid: 5c65a3612523e8f4fab3702d701d2de0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipes
+    second: {fileID: 2100000, guid: d0c1bfd13fed76b42882193f951bcd18, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

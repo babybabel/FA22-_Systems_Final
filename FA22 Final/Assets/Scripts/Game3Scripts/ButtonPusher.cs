@@ -14,6 +14,12 @@ public class ButtonPusher : MonoBehaviour
     
     [SerializeField] AudioSource buttonClick;
 
+    public Material[] buttonSwitch;
+
+    public GameObject buttonMatch;
+
+    private bool toggle = false;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -25,6 +31,18 @@ public class ButtonPusher : MonoBehaviour
         anim.Play("ButtonPush");
         
         buttonClick.Play();
+        
+        if (!toggle)
+        {
+            buttonMatch.GetComponent<SkinnedMeshRenderer>().material = buttonSwitch[1];
+            toggle = true;
+        }
+        else
+        {
+            buttonMatch.GetComponent<SkinnedMeshRenderer>().material = buttonSwitch[0];
+            toggle = false;
+        }
+
 
         if (buttonCode == 0)
         {

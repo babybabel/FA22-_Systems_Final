@@ -9,7 +9,40 @@ ModelImporter:
   - first:
       74: -1522549916890771706
     second: Armature|LeverUp
-  externalObjects: {}
+  - first:
+      74: 8100867506381736470
+    second: Armature|LeverUp.002
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: baseblue
+    second: {fileID: 2100000, guid: 0f51b05df3cb1ea4fbcaccc4c9709c41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: basedarkpink
+    second: {fileID: 2100000, guid: ed08e3565d7d6ba43a2288bf208923e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: basedarkred
+    second: {fileID: 2100000, guid: 3f7ce5aaf1cb87d45ba0db3a0485e68a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: basewhite
+    second: {fileID: 2100000, guid: ccb865b27bb47e242a50b69065ccebba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackpoint
+    second: {fileID: 2100000, guid: 93ebaf78d0d3fb543be1762472b426e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lever
+    second: {fileID: 2100000, guid: f47a5a2d5d8c46f48a14745f86db7c61, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
