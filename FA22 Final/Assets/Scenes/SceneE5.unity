@@ -389,6 +389,8 @@ MonoBehaviour:
   successAnim: {fileID: 1957251975}
   successChime: {fileID: 263580036}
   failChime: {fileID: 1837177544}
+  successTune: {fileID: 1271333109}
+  failTune: {fileID: 1271333108}
 --- !u!114 &480095168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,6 +1550,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1dd8f7bbb3aba24db19c74f84b1a31f, type: 3}
+--- !u!82 &1271333108 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7560785308020563052, guid: a1dd8f7bbb3aba24db19c74f84b1a31f, type: 3}
+  m_PrefabInstance: {fileID: 1271333107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1271333109 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8086749843949913542, guid: a1dd8f7bbb3aba24db19c74f84b1a31f, type: 3}
+  m_PrefabInstance: {fileID: 1271333107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1334254530 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9130724341007655609, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}

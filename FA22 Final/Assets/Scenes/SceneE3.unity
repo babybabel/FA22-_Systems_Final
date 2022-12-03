@@ -595,6 +595,8 @@ MonoBehaviour:
   successAnim: {fileID: 1852465621}
   successChime: {fileID: 640081369}
   failChime: {fileID: 640081368}
+  successTune: {fileID: 1796829889}
+  failTune: {fileID: 1669070961}
 --- !u!114 &480095168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2254,7 +2256,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &1668633596
 MonoBehaviour:
@@ -2326,6 +2328,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &1669070961 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7560785308020563052, guid: a1dd8f7bbb3aba24db19c74f84b1a31f, type: 3}
+  m_PrefabInstance: {fileID: 640081367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1672372266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2560,6 +2567,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 722106909493749964, guid: d46b31021b22d6345ba3c738c3e56a3f, type: 3}
   m_PrefabInstance: {fileID: 1789492823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1796829889 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8086749843949913542, guid: a1dd8f7bbb3aba24db19c74f84b1a31f, type: 3}
+  m_PrefabInstance: {fileID: 640081367}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1852465621 stripped
 GameObject:

@@ -295,15 +295,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 5
-    functionName: CloseKitty3
+  - time: 4.6666665
+    functionName: CallKitty0
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 5.5
-    functionName: CallKitty0
+  - time: 5
+    functionName: CloseKitty3
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -323,8 +323,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 7
+  - time: 6.1666665
     functionName: CloseKitty0
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 6.3333335
+    functionName: CallKitty0
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -337,14 +344,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 7.75
-    functionName: CallKitty0
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 9.25
+  - time: 7.8333335
     functionName: CloseKitty0
     data: 
     objectReferenceParameter: {fileID: 0}

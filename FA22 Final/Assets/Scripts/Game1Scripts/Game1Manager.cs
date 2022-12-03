@@ -13,6 +13,9 @@ public class Game1Manager : MonoBehaviour
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
 
+    [SerializeField] AudioSource successTune;
+    [SerializeField] AudioSource failTune;
+    
     public CalamaxController lich;
 
     private void Start()
@@ -28,6 +31,7 @@ public class Game1Manager : MonoBehaviour
             Debug.Log("You Passed Game 1!");
             successAnim.SetActive(true);
             successChime.Play();
+            successTune.Play();
             Scoring.totalScore++;
             lich.LichSuccess();
         }
@@ -36,6 +40,7 @@ public class Game1Manager : MonoBehaviour
             Debug.Log("You Failed Game 1!");
             failAnim.SetActive(true);
             failChime.Play();
+            failTune.Play();
             lich.LichFail();
         }
     }

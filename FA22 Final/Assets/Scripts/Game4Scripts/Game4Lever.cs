@@ -35,7 +35,7 @@ public class Game4Lever : MonoBehaviour
         });
         
         InvokeRepeating("LeverTracker", 0f, .25f);
-        Invoke("NeedleStopper", 10f);
+        Invoke("NeedleStopper", 8f);
 
     }
 

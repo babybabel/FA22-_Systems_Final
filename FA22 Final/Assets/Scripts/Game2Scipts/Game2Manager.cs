@@ -13,6 +13,9 @@ public class Game2Manager : MonoBehaviour
     
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
+    
+    [SerializeField] AudioSource successTune;
+    [SerializeField] AudioSource failTune;
 
     private void Start()
     {
@@ -26,6 +29,7 @@ public class Game2Manager : MonoBehaviour
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
             successChime.Play();
+            successTune.Play();
             Scoring.totalScore++;
             lich.LichSuccess();
         }
@@ -34,6 +38,7 @@ public class Game2Manager : MonoBehaviour
             Debug.Log("You Failed Game 2!");
             failAnim.SetActive(true);
             failChime.Play();
+            failTune.Play();
             lich.LichFail();
         }
     }

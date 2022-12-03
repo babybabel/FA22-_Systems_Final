@@ -14,6 +14,9 @@ public class Game5Manager : MonoBehaviour
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
     
+    [SerializeField] AudioSource successTune;
+    [SerializeField] AudioSource failTune;
+    
     void Start()
     {
         kittyCaller = GameObject.Find("KittyContainer").GetComponent<KittyCaller>();
@@ -27,6 +30,7 @@ public class Game5Manager : MonoBehaviour
             successAnim.SetActive(true);
             successChime.Play();
             lich.LichSuccess();
+            successTune.Play();
             Scoring.totalScore++;
         }
         if (kittyCaller.Game5Fail == true)
@@ -34,6 +38,7 @@ public class Game5Manager : MonoBehaviour
             Debug.Log("You Failed Game 5!");
             failAnim.SetActive(true);
             failChime.Play();
+            failTune.Play();
             lich.LichFail();
         }
     }

@@ -15,6 +15,9 @@ public class Game6Manager : MonoBehaviour
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
     [SerializeField] AudioSource evil;
+    
+    [SerializeField] AudioSource successTune;
+    [SerializeField] AudioSource failTune;
 
     void Start()
     {
@@ -28,6 +31,7 @@ public class Game6Manager : MonoBehaviour
             Debug.Log("You Failed Game 6!");
             failAnim.SetActive(true);
             failChime.Play();
+            failTune.Play();
             lich.LichFail();
         }
         if (keyboard.Game6Fail == false && keyboard.Game6Fucked == false)
@@ -35,6 +39,7 @@ public class Game6Manager : MonoBehaviour
             Debug.Log("You Passed Game 6!");
             successAnim.SetActive(true);
             successChime.Play();
+            successTune.Play();
             evil.Play();
             lich.LichSuccess();
             Scoring.totalScore++;

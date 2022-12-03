@@ -14,6 +14,9 @@ public class Game4Manager : MonoBehaviour
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
     
+    [SerializeField] AudioSource successTune;
+    [SerializeField] AudioSource failTune;
+    
     private void Start()
     {
         Lever = GameObject.Find("Game4Lever").GetComponent<Game4Lever>();
@@ -26,6 +29,7 @@ public class Game4Manager : MonoBehaviour
             Debug.Log("You Passed Game 2!");
             successAnim.SetActive(true);
             successChime.Play();
+            successTune.Play();
             lich.LichSip();
             Scoring.totalScore++;
         }
@@ -34,6 +38,7 @@ public class Game4Manager : MonoBehaviour
             Debug.Log("You Failed Game 2!");
             failAnim.SetActive(true);
             failChime.Play();
+            failTune.Play();
             lich.LichFail();
         }
     }

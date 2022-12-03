@@ -14,7 +14,9 @@ public class Game7Manager : MonoBehaviour
 
     [SerializeField] AudioSource successChime;
     [SerializeField] AudioSource failChime;
-
+    
+    [SerializeField] AudioSource successTune;
+    [SerializeField] AudioSource failTune;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class Game7Manager : MonoBehaviour
             Debug.Log("You Failed Game 7!");
             failAnim.SetActive(true);
             failChime.Play();
+            failTune.Play();
             lich.LichFail();
         }
         if (oven.Game7Fail == false && oven.Game7Fucked == false)
@@ -36,6 +39,7 @@ public class Game7Manager : MonoBehaviour
             Debug.Log("You Passed Game 7!");
             successAnim.SetActive(true);
             successChime.Play();
+            successTune.Play();
             lich.LichSuccess();
             Scoring.totalScore++;
             Debug.Log(Scoring.totalScore);

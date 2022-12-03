@@ -23,5 +23,23 @@ public class MusicMaster : MonoBehaviour
         track[2].Play();
     }
     
+    public void SongD()
+    {
+        track[3].Play();
+    }
     
+    public void SongE()
+    {
+        track[4].Play();
+    }
+    
+    public void SongF()
+    {
+        track[5].Play();
+    }
+    
+    public void SongG()
+    {
+        track[6].Play();
+    }
 }
