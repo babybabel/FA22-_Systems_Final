@@ -18,6 +18,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] AudioSource gemClick;
     [SerializeField] AudioSource bookFlip;
 
+    [SerializeField] AudioSource theme;
+
 
     void Start()
     {
@@ -58,6 +60,13 @@ public class MenuController : MonoBehaviour
         anim.Play("BookLookUp");
         
         logoAnim.SetActive(false);
+
+        InvokeRepeating("ThemeMute", 0f, .1f);
+    }
+
+    public void ThemeMute()
+    {
+        theme.volume = theme.volume - .02f;
     }
     
 }

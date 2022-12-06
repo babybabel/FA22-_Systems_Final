@@ -670,7 +670,7 @@ PrefabInstance:
     - target: {fileID: 799242824412354149, guid: 68e9344746912464ab42e6d46a37e481, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: cbe4b9eda561fbd45b0b18b2396997ce, type: 2}
     - target: {fileID: 8220446863878960580, guid: 68e9344746912464ab42e6d46a37e481, type: 3}
       propertyPath: m_Name
       value: Music

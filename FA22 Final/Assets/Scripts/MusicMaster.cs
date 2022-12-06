@@ -42,4 +42,29 @@ public class MusicMaster : MonoBehaviour
     {
         track[6].Play();
     }
+
+    public void SongIntro()
+    {
+        track[7].Play();
+    }
+
+    public void SongTheme()
+    {
+        track[8].Play();
+    }
+
+    public void SongTransition()
+    {
+        track[9].Play();
+    }
+
+    public void SongFinale()
+    {
+        track[10].Play();
+    }
+
+    public void SongResults()
+    {
+        track[11].Play();
+    }
 }

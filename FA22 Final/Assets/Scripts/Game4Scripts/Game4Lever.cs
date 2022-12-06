@@ -70,7 +70,7 @@ public class Game4Lever : MonoBehaviour
         
         Debug.Log(leverCounter);
 
-        if (leverCounter == 20)
+        if (leverCounter == 15)
         {
             Game4Fail = false;
             Debug.Log("Pass!");
