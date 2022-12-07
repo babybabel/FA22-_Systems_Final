@@ -23,6 +23,8 @@ public class Game4Lever : MonoBehaviour
     [SerializeField] AudioSource needleHit;
 
     [SerializeField] AudioSource sipCup;
+
+    [SerializeField] AudioSource leverblock;
     
     void Start()
     {
@@ -34,7 +36,7 @@ public class Game4Lever : MonoBehaviour
             lever = v;
         });
         
-        InvokeRepeating("LeverTracker", 0f, .25f);
+        InvokeRepeating("LeverTracker", 0f, .2f);
         Invoke("NeedleStopper", 8f);
 
     }
@@ -66,6 +68,11 @@ public class Game4Lever : MonoBehaviour
             sipCup.Play();
             sipCupPitch += .04f;
             sipCup.pitch = sipCupPitch;
+        }
+
+        if (lever >= 0.67)
+        {
+            leverblock.Play();
         }
         
         Debug.Log(leverCounter);

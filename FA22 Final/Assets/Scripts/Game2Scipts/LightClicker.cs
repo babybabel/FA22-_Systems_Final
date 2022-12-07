@@ -20,6 +20,8 @@ public class LightClicker : MonoBehaviour
     [SerializeField] AudioSource light;
     [SerializeField] AudioSource lit;
 
+    public ParticleSystem spark;
+
 
     private void Start()
     {
@@ -30,7 +32,7 @@ public class LightClicker : MonoBehaviour
     {
         
         click.Play();
-        
+        spark.Play();
 
         if (clickTracker < 20)
         {

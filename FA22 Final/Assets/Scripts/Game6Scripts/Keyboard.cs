@@ -19,6 +19,9 @@ public class Keyboard : MonoBehaviour
 
     public GameObject compScreen;
 
+    public GameObject crack;
+    [SerializeField] AudioSource cracksmash;
+
     void Start()
     {
         key = GameObject.Find("KeyboardKey").GetComponents<KeyPresser>();
@@ -31,6 +34,7 @@ public class Keyboard : MonoBehaviour
         {
             Game6Fucked = true;
             Debug.Log("you fucked up");
+            
 
         }
         if ((charFilled[0] == false || charFilled[1] == false) && charFilled[2] == true)
@@ -46,7 +50,6 @@ public class Keyboard : MonoBehaviour
 
         }
 
-        
     }
 
     public void KeyPressedQ()

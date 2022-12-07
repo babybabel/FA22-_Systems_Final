@@ -1336,7 +1336,7 @@ MonoBehaviour:
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010100
   customRes: {x: 384, y: 256}
-  resolutionFactor: 4
+  resolutionFactor: 3
   limitFramerate: 0
   skipFrames: 0
   affineMapping: 0
