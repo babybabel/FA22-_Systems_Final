@@ -35,4 +35,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneEResults.unity
     guid: e3a41bdfc784c764093d462d20ef7fdb
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneHbegin.unity
+    guid: 6991dc4076e84ef4194b12d248f9811a
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH1.unity
+    guid: 5a1d58e0e8e969c4a9fb4c57b480a3fe
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH2.unity
+    guid: a8ceb336ae78dfd4b93f7032482c1351
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH3.unity
+    guid: 415fea4b41064ad469dd2579212a5f79
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH4.unity
+    guid: d9ce236725137114ea3c3985690e42bc
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH5.unity
+    guid: d47e37624b64f81469a2b76f9447e2a1
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH6.unity
+    guid: adaae49607f3600469796a2412ea1934
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneH7.unity
+    guid: 552202f6c63aa0947a29d000256b4e98
+  - enabled: 1
+    path: Assets/Scenes/HardMode/SceneHResults.unity
+    guid: af9fc82f1302678498cc42469a490c6e
   m_configObjects: {}

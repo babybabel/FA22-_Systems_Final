@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HardButton : MonoBehaviour
 {
@@ -27,6 +28,6 @@ public class HardButton : MonoBehaviour
 
     public void HardPath()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene("Scenes/HardMode/SceneHbegin");
     }
 }
