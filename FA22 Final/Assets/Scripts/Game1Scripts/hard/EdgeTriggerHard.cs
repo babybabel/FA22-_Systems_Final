@@ -24,8 +24,25 @@ public class EdgeTriggerHard : MonoBehaviour
 
         if (other.CompareTag("BeltObjectB"))
         {
+            Debug.Log("Fail");
+            Game1Fail = true;
+            fall.Play();
+            lich.Lich4Bubble_Game1();
+        }
+        
+        if (other.CompareTag("BeltObjectC"))
+        {
             Debug.Log("Pass");
             fall.Play();
         }
+        
+        if (other.CompareTag("BeltObjectD"))
+        {
+            Debug.Log("Fail");
+            Game1Fail = true;
+            fall.Play();
+            lich.Lich4Bubble_Game1();
+        }
+
     }
 }

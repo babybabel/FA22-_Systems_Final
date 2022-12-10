@@ -6058,9 +6058,9 @@ GameObject:
   m_Component:
   - component: {fileID: 480095164}
   - component: {fileID: 480095165}
-  - component: {fileID: 480095167}
   - component: {fileID: 480095168}
   - component: {fileID: 480095169}
+  - component: {fileID: 480095170}
   m_Layer: 0
   m_Name: CameraAxis
   m_TagString: Untagged
@@ -6104,26 +6104,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &480095167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480095163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af7b2e411ee9f24684e8718cb4e92f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lich: {fileID: 874914917}
-  lightClicker: {fileID: 1053611062}
-  failAnim: {fileID: 1159051601}
-  successAnim: {fileID: 1874741784}
-  successChime: {fileID: 1076447780}
-  failChime: {fileID: 1218093456}
-  successTune: {fileID: 15786767}
-  failTune: {fileID: 1454974865}
 --- !u!114 &480095168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6149,6 +6129,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 303fa3a91af1cc048ab7fe74cc6f19bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &480095170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480095163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f07e0cc55beab47b6e9cddb94971ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 874914917}
+  lightClicker: {fileID: 1053611063}
+  failAnim: {fileID: 1159051601}
+  successAnim: {fileID: 1874741784}
+  successChime: {fileID: 1076447780}
+  failChime: {fileID: 1218093456}
+  successTune: {fileID: 15786767}
+  failTune: {fileID: 1454974865}
 --- !u!1 &537672866
 GameObject:
   m_ObjectHideFlags: 0
@@ -7335,7 +7335,7 @@ GameObject:
   - component: {fileID: 1053611059}
   - component: {fileID: 1053611061}
   - component: {fileID: 1053611060}
-  - component: {fileID: 1053611062}
+  - component: {fileID: 1053611063}
   m_Layer: 0
   m_Name: LightClicker
   m_TagString: Untagged
@@ -7392,7 +7392,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1053611062
+--- !u!114 &1053611063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7401,7 +7401,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053611058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aedd4541f817a44fbd4c4d649a18902, type: 3}
+  m_Script: {fileID: 11500000, guid: 76aba9477ae779840bfdd3048449baf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lich: {fileID: 874914917}

@@ -437,7 +437,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &190272524
+--- !u!114 &190272525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -446,10 +446,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 190272520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11cfddf43bbc22445b00a86b8764b56b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d7b926d48c90724abbd2c0ff3850734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lever: {fileID: 1225384034}
+  lever: {fileID: 1225384035}
   cup: {fileID: 190272522}
 --- !u!82 &249142071 stripped
 AudioSource:
@@ -536,9 +536,9 @@ GameObject:
   m_Component:
   - component: {fileID: 480095164}
   - component: {fileID: 480095165}
-  - component: {fileID: 480095167}
   - component: {fileID: 480095168}
   - component: {fileID: 480095169}
+  - component: {fileID: 480095170}
   m_Layer: 0
   m_Name: CameraAxis
   m_TagString: Untagged
@@ -582,26 +582,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &480095167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480095163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b540bce8bc92504cb3b453bc4b1d4e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lich: {fileID: 1621965410}
-  Lever: {fileID: 1225384034}
-  failAnim: {fileID: 2068747324}
-  successAnim: {fileID: 1067646082}
-  successChime: {fileID: 1175418182}
-  failChime: {fileID: 1175418181}
-  successTune: {fileID: 1374630629}
-  failTune: {fileID: 249142071}
 --- !u!114 &480095168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,6 +607,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62a557f40cc9034387807eb69ef5c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &480095170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480095163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7165055a661c8f8418e727f5400f68b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1621965410}
+  Lever: {fileID: 1225384035}
+  failAnim: {fileID: 2068747324}
+  successAnim: {fileID: 1067646082}
+  successChime: {fileID: 1175418182}
+  failChime: {fileID: 1175418181}
+  successTune: {fileID: 1374630629}
+  failTune: {fileID: 249142071}
 --- !u!1001 &606906894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6327,7 +6327,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1225384034
+--- !u!114 &1225384035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6336,7 +6336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 815136553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c91d1d432f956945be3ba66ec910b24, type: 3}
+  m_Script: {fileID: 11500000, guid: ab4658f726cfaad4ea21e0fd1c8cfd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animLever: {fileID: 1225384033}

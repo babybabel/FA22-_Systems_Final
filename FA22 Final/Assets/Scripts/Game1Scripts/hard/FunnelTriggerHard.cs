@@ -21,10 +21,22 @@ public class FunnelTriggerHard : MonoBehaviour
 
         if (other.CompareTag("BeltObjectB"))
         {
+            Debug.Log("Pass");
+            plop.Play();
+        }
+        
+        if (other.CompareTag("BeltObjectC"))
+        {
             Debug.Log("Fail");
             Game1Fail = true;
             plop.Play();
             lich.Lich4Bubble_Game1();
+        }
+        
+        if (other.CompareTag("BeltObjectD"))
+        {
+            Debug.Log("Pass");
+            plop.Play();
         }
     }
 }
