@@ -31,8 +31,8 @@ public class OvenHard : MonoBehaviour
     void Start()
     {
         ovenanim = GetComponent<Animator>();
-        Invoke("BecomeReady", 6f);
-        Invoke("NoLongerReady", 7.5f);
+        Invoke("BecomeReady", 7f);
+        Invoke("NoLongerReady", 7.75f);
         
         
     }

@@ -724,7 +724,7 @@ Animator:
   m_GameObject: {fileID: 480095163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a561dec6fb9db940ab1ad1a30946bed, type: 2}
+  m_Controller: {fileID: 9100000, guid: 80d2ffd7ebc9b1640b1f0ce74baff25c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1715,7 +1715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b416fbce5a38cc47a3a1e709f95f5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cfuStatus: PSXEffects v1.18.4 - version ahead?!
+  cfuStatus: Checking for updates...
   sections: 01010100
   customRes: {x: 384, y: 256}
   resolutionFactor: 3

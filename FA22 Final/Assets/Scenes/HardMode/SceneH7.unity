@@ -371,9 +371,9 @@ GameObject:
   m_Component:
   - component: {fileID: 480095164}
   - component: {fileID: 480095165}
-  - component: {fileID: 480095167}
   - component: {fileID: 480095168}
   - component: {fileID: 480095169}
+  - component: {fileID: 480095170}
   m_Layer: 0
   m_Name: CameraAxis
   m_TagString: Untagged
@@ -407,7 +407,7 @@ Animator:
   m_GameObject: {fileID: 480095163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a0855c0bd4b99a4bb87f0a61c75f2db, type: 2}
+  m_Controller: {fileID: 9100000, guid: e2fc18aba3191214586a08404f749dc9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -417,26 +417,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &480095167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480095163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7db85de21eb4d342900cf3f65083648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lich: {fileID: 1366375614}
-  oven: {fileID: 1005417192}
-  failAnim: {fileID: 1099351441}
-  successAnim: {fileID: 1571950388}
-  successChime: {fileID: 1134726247}
-  failChime: {fileID: 1134726246}
-  successTune: {fileID: 1134726249}
-  failTune: {fileID: 1134726248}
 --- !u!114 &480095168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +442,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b10437e5c255544a4b002746bbcc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &480095170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480095163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fbe6bab29708240a8e233b4cb2eaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1366375614}
+  oven: {fileID: 1005417193}
+  failAnim: {fileID: 1099351441}
+  successAnim: {fileID: 1571950388}
+  successChime: {fileID: 1134726247}
+  failChime: {fileID: 1134726246}
+  successTune: {fileID: 1134726249}
+  failTune: {fileID: 1134726248}
 --- !u!1001 &590298849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1059,7 +1059,7 @@ GameObject:
   - component: {fileID: 1005417189}
   - component: {fileID: 1005417190}
   - component: {fileID: 1005417191}
-  - component: {fileID: 1005417192}
+  - component: {fileID: 1005417193}
   m_Layer: 0
   m_Name: OvenDoor
   m_TagString: Untagged
@@ -1116,7 +1116,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1005417192
+--- !u!114 &1005417193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1005417188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad63cf22355aac4bbc009d07e709772, type: 3}
+  m_Script: {fileID: 11500000, guid: 4438cd58e09938647967bfab3c5d8a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lich: {fileID: 1366375614}
@@ -2129,7 +2129,7 @@ Animator:
   m_GameObject: {fileID: 1924460668}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 54c5c04321147aa429d48c72549ece12, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4768c6a7503deb84da9e95aeefe943ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

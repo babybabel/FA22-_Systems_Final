@@ -7,7 +7,7 @@ public class Game7ManagerHard : MonoBehaviour
 
     public CalamaxController lich;
 
-    public Oven oven;
+    public OvenHard oven;
 
     [SerializeField] GameObject failAnim;
     [SerializeField] GameObject successAnim;
@@ -20,7 +20,7 @@ public class Game7ManagerHard : MonoBehaviour
 
     void Start()
     {
-        oven = GameObject.Find("OvenDoor").gameObject.GetComponent<Oven>();
+        oven = GameObject.Find("OvenDoor").gameObject.GetComponent<OvenHard>();
         
     }
 

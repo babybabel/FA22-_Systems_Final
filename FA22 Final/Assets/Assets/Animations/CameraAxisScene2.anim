@@ -765,7 +765,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 14
-    functionName: LoadSceneH3
+    functionName: LoadSceneE3
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
