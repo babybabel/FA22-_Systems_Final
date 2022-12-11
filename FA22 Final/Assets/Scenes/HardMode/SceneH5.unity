@@ -303,6 +303,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9130724341007655609, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_PrefabInstance: {fileID: 510220046}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &475584145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475584144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2880c961e022458a490d7715d96ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1200866533}
+  kittyAnimator: {fileID: 510220047}
+  kittyCaller: {fileID: 829575165}
 --- !u!1 &480095163
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,9 +328,9 @@ GameObject:
   m_Component:
   - component: {fileID: 480095164}
   - component: {fileID: 480095165}
-  - component: {fileID: 480095167}
   - component: {fileID: 480095168}
   - component: {fileID: 480095169}
+  - component: {fileID: 480095170}
   m_Layer: 0
   m_Name: CameraAxis
   m_TagString: Untagged
@@ -359,26 +374,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &480095167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480095163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c5ffcaf43b4bc747a468228672dcdcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lich: {fileID: 1200866533}
-  kittyCaller: {fileID: 829575163}
-  failAnim: {fileID: 1929715920}
-  successAnim: {fileID: 1957251975}
-  successChime: {fileID: 263580036}
-  failChime: {fileID: 1837177544}
-  successTune: {fileID: 1271333109}
-  failTune: {fileID: 1271333108}
 --- !u!114 &480095168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +399,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641c964c8d855a34181900292ddd3e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &480095170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480095163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0963d559ccbad4c9ea7a266592cd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1200866533}
+  kittyCaller: {fileID: 829575165}
+  failAnim: {fileID: 1929715920}
+  successAnim: {fileID: 1957251975}
+  successChime: {fileID: 263580036}
+  failChime: {fileID: 1837177544}
+  successTune: {fileID: 1271333109}
+  failTune: {fileID: 1271333108}
 --- !u!1001 &510220046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -455,6 +470,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3604207816079430328, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6a10909632e52f744848fb29bfb763c9, type: 2}
     - target: {fileID: 4228834003762668492, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyNya
       value: 
@@ -486,12 +505,13 @@ PrefabInstance:
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCaller
       value: 
-      objectReference: {fileID: 829575163}
+      objectReference: {fileID: 0}
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCounter
       value: 
-      objectReference: {fileID: 829575163}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
 --- !u!114 &510220047 stripped
 MonoBehaviour:
@@ -684,6 +704,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3604207816079430328, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6a10909632e52f744848fb29bfb763c9, type: 2}
     - target: {fileID: 4228834003762668492, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyNya
       value: 
@@ -715,12 +739,13 @@ PrefabInstance:
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCaller
       value: 
-      objectReference: {fileID: 829575163}
+      objectReference: {fileID: 0}
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCounter
       value: 
-      objectReference: {fileID: 829575163}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
 --- !u!114 &728633006 stripped
 MonoBehaviour:
@@ -870,8 +895,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 829575162}
-  - component: {fileID: 829575163}
   - component: {fileID: 829575164}
+  - component: {fileID: 829575165}
   m_Layer: 0
   m_Name: KittyContainer
   m_TagString: Untagged
@@ -898,7 +923,27 @@ Transform:
   m_Father: {fileID: 1127210048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &829575163
+--- !u!95 &829575164
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829575161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ebce843cad09884096a0499edebe3ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &829575165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -907,7 +952,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 829575161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58154120b3103ab48ae19f172ccd86a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b56cf3fe2fd9c440b420e78c1d94fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   kittyArr:
@@ -922,31 +967,26 @@ MonoBehaviour:
   - {fileID: 1334254530}
   kittyCounter: 0
   Game5Fail: 1
---- !u!95 &829575164
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829575161}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1c01843e36064db448c4f2d7152d7a52, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &859591797 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9130724341007655609, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_PrefabInstance: {fileID: 728633005}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &859591798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859591797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2880c961e022458a490d7715d96ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1200866533}
+  kittyAnimator: {fileID: 728633006}
+  kittyCaller: {fileID: 829575165}
 --- !u!4 &910092811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2291013821375119928, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
@@ -1565,6 +1605,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9130724341007655609, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_PrefabInstance: {fileID: 1549134598}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1334254532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334254530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2880c961e022458a490d7715d96ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1200866533}
+  kittyAnimator: {fileID: 1549134599}
+  kittyCaller: {fileID: 829575165}
 --- !u!1001 &1549134598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1616,6 +1671,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3604207816079430328, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6a10909632e52f744848fb29bfb763c9, type: 2}
     - target: {fileID: 4228834003762668492, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyNya
       value: 
@@ -1647,12 +1706,13 @@ PrefabInstance:
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCaller
       value: 
-      objectReference: {fileID: 829575163}
+      objectReference: {fileID: 0}
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCounter
       value: 
-      objectReference: {fileID: 829575163}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
 --- !u!114 &1549134599 stripped
 MonoBehaviour:
@@ -1792,6 +1852,10 @@ PrefabInstance:
       propertyPath: MyCameraTransform
       value: 
       objectReference: {fileID: 963194228}
+    - target: {fileID: 2049506800180350206, guid: 79999479eaf0cce428f75c2c9dffe3bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83a775e36e9e9784a8c87c0ce9d2e1f5, type: 2}
     - target: {fileID: 3366379431533665167, guid: 79999479eaf0cce428f75c2c9dffe3bb, type: 3}
       propertyPath: MyCameraTransform
       value: 
@@ -1931,6 +1995,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9130724341007655609, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_PrefabInstance: {fileID: 958593903121726880}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884025779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884025778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2880c961e022458a490d7715d96ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lich: {fileID: 1200866533}
+  kittyAnimator: {fileID: 958593903121726881}
+  kittyCaller: {fileID: 829575165}
 --- !u!1 &1906334132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,6 +2629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3604207816079430328, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6a10909632e52f744848fb29bfb763c9, type: 2}
     - target: {fileID: 4228834003762668492, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyNya
       value: 
@@ -2581,12 +2664,13 @@ PrefabInstance:
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCaller
       value: 
-      objectReference: {fileID: 829575163}
+      objectReference: {fileID: 0}
     - target: {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
       propertyPath: kittyCounter
       value: 
-      objectReference: {fileID: 829575163}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7407637528735423371, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4b738b41ec4b044cb843080cbb997e0, type: 3}
 --- !u!114 &958593903121726881 stripped
 MonoBehaviour:
